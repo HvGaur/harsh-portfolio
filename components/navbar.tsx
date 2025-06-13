@@ -70,7 +70,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            HVG
+            HV
           </motion.a>
 
           <nav className="hidden md:block">
