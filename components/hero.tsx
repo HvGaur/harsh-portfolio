@@ -114,8 +114,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            A Software Engineer with expertise in Java, Angular, and full-stack development. Creating innovative solutions
-            with a passion for clean code and elegant design.
+            A tech and design enthusiast.
           </motion.p>
           <motion.div
             className="flex flex-wrap gap-4"
