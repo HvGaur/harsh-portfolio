@@ -68,22 +68,44 @@ export default function Contact() {
     })
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault()
+  //   setIsSubmitting(true)
+
+  //   // Simulate form submission
+  //   setTimeout(() => {
+  //     setIsSubmitting(false)
+  //     setIsSubmitted(true)
+  //     setFormState({ name: "", email: "", message: "" })
+
+  //     // Reset submission status after 3 seconds
+  //     setTimeout(() => {
+  //       setIsSubmitted(false)
+  //     }, 3000)
+  //   }, 1500)
+  // }
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false)
+  
+    const response = await fetch("https://formspree.io/f/xanjogdr", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formState),
+    })
+  
+    setIsSubmitting(false)
+    if (response.ok) {
       setIsSubmitted(true)
       setFormState({ name: "", email: "", message: "" })
-
-      // Reset submission status after 3 seconds
-      setTimeout(() => {
-        setIsSubmitted(false)
-      }, 3000)
-    }, 1500)
+      setTimeout(() => setIsSubmitted(false), 3000)
+    } else {
+      alert("Something went wrong. Please try again later.")
+    }
   }
+  
 
   const containerVariants = {
     hidden: { opacity: 0 },
