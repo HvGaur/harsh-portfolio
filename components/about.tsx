@@ -80,8 +80,8 @@ export default function About() {
             About Me
             <span className="heading-line absolute -bottom-2 left-0 h-1 bg-[#f7ab0a]" />
           </h2>
-          <p className="text-block max-w-2xl text-lg text-white/70">
-            A passionate software engineer with a focus on creating elegant, efficient solutions to complex problems.
+          <p className="text-block max-w-2xl text-lg text-white/70 font-mono">
+          A wannabe Software Engineer.
           </p>
         </div>
 
@@ -94,18 +94,13 @@ export default function About() {
               animate={isInView ? "visible" : "hidden"}
             >
               <motion.p variants={itemVariants} className="text-white/80">
-                I'm a Software Engineer with a background in Electronics and Communications Engineering from BMS
-                Institute of Technology and Management. Currently working as a Software Engineer Intern at BT Group, I
-                specialize in full-stack development using Java (Spring Boot), Angular, PostgreSQL, and Neo4j.
+                I did my B.E. in Electronics and Communications (yeah, i know) and I currently write my codes over at BT Group as an SWE Intern. cool stuff.
               </motion.p>
               <motion.p variants={itemVariants} className="text-white/80">
-                My passion lies in creating efficient, scalable applications that solve real-world problems. I enjoy
-                working on complex systems and finding elegant solutions to challenging technical issues.
+                I like working on new projects. I'd rather have people look at my horrible code than look at others'. I have excellent (lol) knowledge of Java, Spring boot and Angular. And I have a good eye for design so that helps.
               </motion.p>
               <motion.p variants={itemVariants} className="text-white/80">
-                Beyond coding, I've served as the Creative and Design Head at Google Developer Student Clubs, where I
-                led a team of 8 and mentored over 200 students in design, development, and data structures and
-                algorithms.
+                I am a music and movies enthusiast too. and sports kinda altho I suck at most of them, except swimming and football.
               </motion.p>
             </motion.div>
           </div>

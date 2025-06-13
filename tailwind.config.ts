@@ -20,7 +20,9 @@ const config = {
     },
     extend: {
       fontFamily: {
+		sans: ["var(--font-jetbrains)", "monospace"], 
         grotesque: ["var(--font-grotesque)", "sans-serif"],
+		mono: ["var(--font-jetbrains)", "monospace"],
       },
       colors: {
         border: "hsl(var(--border))",
